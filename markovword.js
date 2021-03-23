@@ -17,7 +17,6 @@ function MarkovGeneratorWord(n, max) {
 
     var tokens = text.tokenize();
 
-    // Discard this line if it's too short
     if (tokens.length < this.n) {
       return false;
     }
